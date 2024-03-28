@@ -9,7 +9,7 @@ async function insertGallerySlides(block) {
   const damPrefix = 'https://www.pgatour.com';
   const config = readBlockConfig(block);
   const galleryURL = config.source;
-  const limit = config.limit || 24;
+  const limit = config.limit || 10;
   block.innerHTML = '';
 
   const directURL = `${galleryURL}&size=${limit}`;
@@ -73,7 +73,7 @@ async function insertCourseFeedSlides(block) {
       // eslint-disable-next-line no-await-in-loop
       const meta = await metaresp.json();
       const metaDesc = meta['dc:description'];
-      const metaCreator = meta['dc:creator'];
+      const metaCreator = typeof meta['dc:creator'] === 'object' ? meta['dc:creator'] : [meta['dc:creator']];
       const metaRights = meta['dc:rights'];
       const metaTitle = meta['dc:title'];
       const avg = hole.stats.find((stat) => stat.id === '43108').eV2;

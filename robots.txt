@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-sitemap:
+sitemap: https://www.tourchampionship.com/sitemap.xml

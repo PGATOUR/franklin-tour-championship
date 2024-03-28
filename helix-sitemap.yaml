@@ -2,7 +2,7 @@ version: 1
 
 sitemaps:
   website:
-    origin:
+    origin: https://www.tourchampionship.com
     lastmod: YYYY-MM-DD
     languages:
       default:
