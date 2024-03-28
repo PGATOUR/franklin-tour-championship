@@ -1,8 +1,8 @@
 # PGA Tour Championship
 
 ## Environments
-- Preview: https://main--pga-tour-championship--hlxsites.hlx.page/
-- Live: https://main--pga-tour-championship--hlxsites.hlx.live/
+- Preview: https://main--franklin-tour-championship--pgatour.hlx.page/
+- Live: https://main--franklin-tour-championship--pgatour.hlx.live/
 - Prod: https://www.tourchampionship.com/
 
 ## Installation
